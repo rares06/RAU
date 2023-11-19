@@ -1,21 +1,21 @@
 @font-face {
   font-family: Inter-Regular;
-  src: url(resources/InterFont/static/Inter-Regular.ttf);
+  src: url(resources/Inter-Regular.ttf);
 }
 
 @font-face {
   font-family: Khand-Regular;
-  src: url(resources/KhandFont/Khand-Regular.ttf);
+  src: url(resources/Khand-Regular.ttf);
 }
 
 @font-face {
   font-family: Inter-Bold;
-  src: url(resources/InterFont/static/Inter-Bold.ttf);
+  src: url(resources/Inter-Bold.ttf);
 }
 
 @font-face {
   font-family: Khand-Bold;
-  src: url(resources/KhandFont/Khand-Bold.ttf);
+  src: url(resources/Khand-Bold.ttf);
 }
 
 html, body {
@@ -403,4 +403,3 @@ p {
   top: 26px;
   left: 81px;
 }
-
