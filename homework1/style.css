@@ -1,1 +1,406 @@
+@font-face {
+  font-family: Inter-Regular;
+  src: url(resources/InterFont/static/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: Khand-Regular;
+  src: url(resources/KhandFont/Khand-Regular.ttf);
+}
+
+@font-face {
+  font-family: Inter-Bold;
+  src: url(resources/InterFont/static/Inter-Bold.ttf);
+}
+
+@font-face {
+  font-family: Khand-Bold;
+  src: url(resources/KhandFont/Khand-Bold.ttf);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.BG {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.BG .overlap-wrapper {
+  background-image: url(resources/background-image.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  object-fit: cover;
+  mix-blend-mode: normal;
+  margin: 0;
+}
+
+.BG .overlap {
+  z-index: 1;
+  position: relative;
+  width: 495px;
+  height: 636px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 15vh;
+}
+
+.BG .overlap-group {
+  z-index: 2;
+  position: relative;
+  width: 495px;
+  height: 636px;
+  background-color: #ffffff;
+}
+
+.BG .content-title-wrapper {
+  position: absolute;
+  width: 141px;
+  top: 102px;
+  left: 174px;
+  font-family: Inter-Bold, serif;
+  font-weight: 700;
+  color: #000000;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.BG .support {
+  position: absolute;
+  width: 61px;
+  top: 569px;
+  left: 211px;
+  font-family: "Khand-Bold", serif;
+  font-weight: 700;
+  color: #c1c1c1;
+  font-size: 11px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.BG .text-wrapper {
+  position: absolute;
+  width: 72px;
+  height: 17px;
+  top: 589px;
+  left: 205px;
+  font-family: Khand-Bold, serif;
+  font-weight: 700;
+  font-size: 11px;
+  color: #c1c1c1;
+  word-wrap: break-word;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.BG .username {
+  z-index: 2;
+  position: absolute;
+  width: 391px;
+  height: 46px;
+  top: 170px;
+  left: 50px;
+}
+
+.BG .password1 {
+  z-index: 2;
+  position: absolute;
+  width: 391px;
+  height: 46px;
+  top: 230px;
+  left: 50px;
+}
+
+.BG .password2 {
+  z-index: 2;
+  position: absolute;
+  width: 391px;
+  height: 46px;
+  top: 290px;
+  left: 50px;
+}
+
+.BG .div-wrapper {
+  z-index: 0;
+  position: relative;
+  width: 389px;
+  height: 46px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  float: left;
+}
+
+.BG .input-field-wrapper {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  font-family: "Khand-Bold", serif;
+  font-weight: 700;
+  color: #c1c1c1;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: normal;
+  word-wrap: break-word;
+}
+
+.BG .stay-signed-IN-register {
+  position: absolute;
+  color: black;
+  font-size: 11px;
+  font-family: "Inter", serif;
+  font-weight: 400;
+  word-wrap: break-word;
+  width: 74px;
+  height: 13px;
+  top: 444px;
+  left: 50px;
+}
+
+.BG .stay-signed-IN-login {
+  position: absolute;
+  color: black;
+  font-size: 11px;
+  font-family: "Inter", serif;
+  font-weight: 400;
+  word-wrap: break-word;
+  width: 74px;
+  height: 13px;
+  top: 300px;
+  left: 50px;
+}
+
+.BG .square {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 0;
+  left: 0;
+  background-color: #d9d9d9;
+  accent-color: #d9d9d9;
+  border-radius: 1px;
+}
+
+.BG .checkbox-content-title-wrapper {
+  position: absolute;
+  top: 3px;
+  left: 24px;
+  font-family: "Inter-Regular", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: black;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.BG .arrow {
+  position: absolute;
+  width: 84px;
+  height: 84px;
+  top: 441px;
+  left: 200px;
+  background-color: #d9d9d9;
+  border-radius: 30px;
+}
+
+.BG .icon-wrapper {
+  z-index: 2;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  top: 2px;
+  left: 2px;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.BG .icon {
+  z-index: 1;
+  color: #d9d9d9;
+  position: absolute;
+  width: 30px;
+  height: 28px;
+  top: 26px;
+  left: 25px;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+[contenteditable]:focus {
+  outline: 0 solid transparent;
+}
+
+[placeholder]:empty:before {
+  content: attr(placeholder);
+  color: #c1c1c1;
+  cursor: text;
+}
+
+[placeholder]:empty:focus:before {
+  content: "";
+}
+
+p {
+  left: 463px;
+}
+
+.BG .support-text1  {
+  position: absolute;
+  top: 150px;
+  left: 600px;
+  font-family: "Inter-Bold", Helvetica, serif;
+  font-weight: 700;
+  color: white;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.BG .support-text2 {
+  position: absolute;
+  top: 300px;
+  left: 687px;
+  font-family: "Inter-Bold", Helvetica, serif;
+  font-weight: 700;
+  color: white;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.BG .overlap-group-support {
+  z-index: 1;
+  position: relative;
+  width: 307px;
+  height: 351px;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.BG .username-issues {
+  z-index: 2;
+  position: absolute;
+  width: 307px;
+  height: 351px;
+  top: 450px;
+  left: 180px;
+  transform: translate(70%, 0%);
+}
+
+.BG .password-issues {
+  z-index: 2;
+  position: absolute;
+  width: 307px;
+  height: 351px;
+  top: 450px;
+  left: 590px;
+  transform: translate(70%, 0%);
+}
+
+.BG .email-issues {
+  z-index: 2;
+  position: absolute;
+  width: 307px;
+  height: 351px;
+  top: 450px;
+  left: 979px;
+  transform: translate(70%, 0%);
+}
+
+.BG .lost-username-wrapper {
+  position: absolute;
+  top: 182px;
+  left: 47px;
+  font-family: "Inter-Bold", Helvetica, serif;
+  font-weight: 700;
+  color: #979797;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.BG .lost-password-wrapper {
+  left: 31px;
+  position: absolute;
+  top: 182px;
+  font-family: "Inter-Bold", Helvetica, serif;
+  font-weight: 700;
+  color: #979797;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.BG .lost-password-text {
+  position: absolute;
+  width: 203px;
+  top: 232px;
+  left: 52px;
+  font-family: "Inter-Bold", Helvetica, serif;
+  font-weight: 700;
+  color: #b7b7b7;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.BG .lost-email-wrapper {
+  left: 57px;
+  position: absolute;
+  top: 182px;
+  font-family: "Inter-Bold", Helvetica, serif;
+  font-weight: 700;
+  color: #979797;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.BG .lost-email-text {
+  position: absolute;
+  width: 221px;
+  top: 232px;
+  left: 43px;
+  font-family: "Inter-Bold", Helvetica, serif;
+  font-weight: 700;
+  color: #b7b7b7;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.BG .support-icon {
+  position: absolute;
+  width: 145px;
+  height: 145px;
+  top: 26px;
+  left: 81px;
+}
 
