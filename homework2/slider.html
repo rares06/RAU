@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider</title>
+  <link rel="stylesheet" href="slider.css">
+</head>
+<body>
+
+<div id="slider-container">
+  <div class="slides">
+    <img src="images/image1.jpg" alt="Slide 1">
+    <img src="images/image2.jpg" alt="Slide 2">
+    <img src="images/image3.jpg" alt="Slide 3">
+    <img src="images/image4.jpg" alt="Slide 4">
+    <img src="images/image5.jpg" alt="Slide 5">
+  </div>
+  <button id="prevBtn" onclick="changeSlide(-1)">Anterioara</button>
+  <button id="nextBtn" onclick="changeSlide(1)">Ulterioara</button>
+</div>
+
+<script src="slider.js"></script>
+</body>
+</html>
