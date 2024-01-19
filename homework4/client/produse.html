@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <link rel="stylesheet" href="produse.css" type="text/css"/>
+</head>
+<body>
+    <h1>Produse</h1>
+
+    <form id="add-product-form">
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" required>
+
+        <label for="productPrice">Product Price:</label>
+        <input type="number" id="productPrice" required>
+
+        <label for="productQuantity">Product Quantity:</label>
+        <input type="number" id="productQuantity" required>
+
+        <label for="productDescription" style="align-items: center;">Product Description:</label>
+        <textarea id="productDescription" rows="3"></textarea>
+
+        <button type="button" onclick="addProduct()">Add Product</button>
+    </form>
+
+    <form id="delete-product-form">
+        <label for="deleteProductId">Product ID to Delete:</label>
+        <input type="number" id="deleteProductId" required>
+
+        <button type="button" onclick="deleteProduct()">Delete Product</button>
+    </form>
+
+    <form id="get-product-form">
+        <label for="getProductId">Product ID to Get:</label>
+        <input type="number" id="getProductId" required>
+
+        <button type="button" onclick="getProduct()">Get Product</button>
+    </form>
+
+    <form id="update-product-form">
+        <label for="updateProductId">Product ID to Update:</label>
+        <input type="number" id="updateProductId" required>
+
+        <button type="button" onclick="updateProduct()">Update Product</button>
+    </form>
+
+    <div id="product-list"></div>
+
+    <script type="text/javascript" src="produse.js"></script>
+</body>
+</html>

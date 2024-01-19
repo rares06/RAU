@@ -1,0 +1,41 @@
+h1 {
+    color: orangered;
+    margin-left: 40px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: aquamarine;
+}
+
+#product-list {
+    margin-bottom: 20px;
+}
+
+.product {
+    border: 1px solid white;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#productQuantity {
+    width: 40px;
+    height: 15px;
+}
+
+#productDescription {
+    width: 300px;
+    height: 15px;
+    top: 0;
+}
+
+#add-product-form,
+#delete-product-form,
+#get-product-form,
+#update-product-form {
+    margin-bottom: 20px;
+}
