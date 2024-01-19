@@ -1,0 +1,97 @@
+/*ext_pe_corp_intreg*/
+
+body { 
+background-color: #E1E1EF;
+}
+
+#rest{position:absolute;
+bottom:0px;
+}
+
+.continut{
+    opacity:0% ;
+}
+
+#bara{
+    position:absolute;
+    margin-top: 0px;
+    left:0px;
+    top:0px;
+    bottom:0px;
+}
+#Heroes{
+    position: absolute;
+    bottom:0px;
+}
+.c{
+    position: relative;
+    width:300px;
+    height:50 px;
+    left:520px;
+    top:215px;
+}
+
+.l1{width:130px;
+    height:42px;
+    z-index: -2;
+}
+.s1{
+    width:1200px;
+    height:850px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index: -3;
+    
+}
+
+
+.yes{
+    width:100px;
+    height:20px;
+    position: relative;   
+    top:0px;
+    left:0px;
+    z-index: -2;
+}
+
+#srt{
+    position:relative;
+
+}
+
+.signin-fields {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-left: auto;
+}
+
+.email-label .password-label {
+    margin-top: 0;
+}
+
+.email-input .password-input {
+    height: 40px;
+    padding: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.signin-button {
+    width: 80px;
+    height: 30px;
+    padding: 0;
+    background-color: transparent;
+    color: blue;
+    opacity: 70%;
+    border: 2px solid gray;
+    border-radius: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: bold;
+    
+    margin-right: 120px;
+    align-self: self-end;
+    margin-top: 20px;
+}
